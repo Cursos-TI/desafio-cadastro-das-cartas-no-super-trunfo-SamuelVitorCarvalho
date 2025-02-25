@@ -18,5 +18,55 @@ int main() {
     // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
     // Exiba os valores inseridos para cada atributo da cidade, um por linha.
 
+    char estadoCarta1;
+    char codigoCarta1[4];
+    char nomeDaCidadeCarta1[50];
+    int populacaoCarta1;
+    float areaCarta1;
+    float pibCarta1;
+    int pontosCarta1;
+
+    char estadoCarta2;
+    char codigoCarta2[3];
+    char nomeDaCidadeCarta2[50];
+    int populacaoCarta2;
+    float areaCarta2;
+    float pibCarta2;
+    int pontosCarta2;
+
+    printf("Desafio Super Trunfo - Nível Novato\n\n");
+    printf("Cadastre a Carta 1:\n\n");
+
+    printf("Digite o estado (A-H): ");
+    scanf(" %c", &estadoCarta1);
+
+    printf("Digite o código da carta (ex: A01): ");
+    scanf("%s", codigoCarta1);
+
+    printf("Digite o nome da cidade: ");
+    scanf("%s", nomeDaCidadeCarta1);
+
+    printf("Digite a população: ");
+    scanf("%i", &populacaoCarta1);
+
+    printf("Digite a área: ");
+    scanf("%f", &areaCarta1);
+
+    printf("Digite o PIB: ");
+    scanf("%f", &pibCarta1);
+
+    printf("Digite o número de pontos turísticos: ");
+    scanf("%d", &pontosCarta1);
+    printf("\n\n");
+
+    printf("Carta 1:\n\n");
+    printf("Estado: %c \n", estadoCarta1);
+    printf("Código: %s \n", codigoCarta1);
+    printf("Nome da Cidade: %s \n", nomeDaCidadeCarta1);
+    printf("População: %d \n", populacaoCarta1);
+    printf("Área: %.2f \n", areaCarta1);
+    printf("PIB: %.2f \n", pibCarta1);
+    printf("Número de Pontos Turísticos: %d \n", pontosCarta1);
+
     return 0;
 }

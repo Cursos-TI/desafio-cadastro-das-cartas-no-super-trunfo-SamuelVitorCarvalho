@@ -27,7 +27,7 @@ int main() {
     int pontosCarta1;
 
     char estadoCarta2;
-    char codigoCarta2[3];
+    char codigoCarta2[4];
     char nomeDaCidadeCarta2[50];
     int populacaoCarta2;
     float areaCarta2;
@@ -41,13 +41,13 @@ int main() {
     scanf(" %c", &estadoCarta1);
 
     printf("Digite o código da carta (ex: A01): ");
-    scanf("%s", codigoCarta1);
+    scanf("%3s", codigoCarta1);
 
     printf("Digite o nome da cidade: ");
-    scanf("%s", nomeDaCidadeCarta1);
+    scanf(" %[^\n]", nomeDaCidadeCarta1); 
 
     printf("Digite a população: ");
-    scanf("%i", &populacaoCarta1);
+    scanf("%d", &populacaoCarta1);
 
     printf("Digite a área: ");
     scanf("%f", &areaCarta1);
@@ -65,13 +65,13 @@ int main() {
     scanf(" %c", &estadoCarta2);
 
     printf("Digite o código da carta (ex: A01): ");
-    scanf("%s", codigoCarta2);
+    scanf("%3s", codigoCarta2);
 
     printf("Digite o nome da cidade: ");
-    scanf("%s", nomeDaCidadeCarta2);
+    scanf(" %[^\n]", nomeDaCidadeCarta2);
 
     printf("Digite a população: ");
-    scanf("%i", &populacaoCarta2);
+    scanf("%d", &populacaoCarta2);
 
     printf("Digite a área: ");
     scanf("%f", &areaCarta2);

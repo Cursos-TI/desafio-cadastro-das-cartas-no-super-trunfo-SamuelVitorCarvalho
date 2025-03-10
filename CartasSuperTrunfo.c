@@ -148,5 +148,16 @@ int main() {
     printf("PIB per Capita: Carta 1 venceu (%d)\n", resultadoPibPerCapita);
     printf("Super Poder: Carta 1 venceu (%d)\n", resultadoSuperPoder);
 
+    // Lógica do Super Trunfo por população
+
+    printf("A Carta 1 - %s: \n", nomeDaCidadeCarta1);
+    printf("A Carta 1 - %s: \n", nomeDaCidadeCarta2);
+
+    if (resultadoPopulacao) {
+        printf("Resultado: Carta 1 (%s) venceu!", nomeDaCidadeCarta1);
+    } else {
+        printf("Resultado: Carta 2 (%s) venceu!", nomeDaCidadeCarta2);
+    }
+
     return 0;
 }
